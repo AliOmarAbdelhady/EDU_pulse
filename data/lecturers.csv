@@ -1,0 +1,10 @@
+lecturer_id,lecturer_name,department,email
+EGCS001,Dr. Ahmed Hassan El-Sayed,Computer Science,ahmed.elsayed@edupulse.edu.eg
+L001,Dr. Linda Ahmed,Computer Science,l001@lecturer.edupulse.edu
+L12345,Test Lecturer,,admin@example.com
+L6591698,Dr. Aliomar Saleh Mohamed,Computer Science,aliomarsalehmohamed@gmail.com
+L999,Test Lecturer,,
+MF001,Dr. Mohamed Fathy,Mathematics,mohamed.fathy@edupulse.edu.eg
+T01,Dr. Ahmed,Computer Science,ahmed@edu.com
+T02,Dr. Smith,Computer Science,smith@edu.com
+T03,Dr. Johnson,Mathematics,johnson@edu.com

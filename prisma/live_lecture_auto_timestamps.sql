@@ -1,0 +1,6 @@
+ALTER TABLE lectures
+  ALTER COLUMN start_time DROP NOT NULL,
+  ALTER COLUMN end_time DROP NOT NULL;
+
+ALTER TABLE emotion_records
+  ALTER COLUMN student_id DROP NOT NULL;

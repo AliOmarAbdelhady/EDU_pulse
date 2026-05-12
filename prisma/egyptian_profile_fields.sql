@@ -1,0 +1,10 @@
+ALTER TABLE "students"
+  ADD COLUMN IF NOT EXISTS "gpa" DOUBLE PRECISION DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS "completed_credit_hours" INTEGER DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS "academic_standing" TEXT DEFAULT 'Good Standing';
+
+ALTER TABLE "lecturers"
+  ADD COLUMN IF NOT EXISTS "academic_rank" TEXT,
+  ADD COLUMN IF NOT EXISTS "office_location" TEXT,
+  ADD COLUMN IF NOT EXISTS "office_hours" TEXT,
+  ADD COLUMN IF NOT EXISTS "hire_date" TIMESTAMP(3);

@@ -1,0 +1,20 @@
+﻿fastapi==0.115.0
+uvicorn==0.30.6
+deepface==0.0.99
+tf-keras==2.21.0
+opencv-python==4.13.0.92
+pandas==2.3.2
+python-multipart==0.0.9
+psycopg2-binary==2.9.12
+bcrypt==5.0.0
+python-jose==3.5.0
+pydantic==2.12.4
+email-validator==2.3.0
+pytest==9.0.3
+python-dotenv==1.0.1
+# LLM summarizer (facebook/bart-large-cnn via HuggingFace)
+transformers>=4.40.0
+torch>=2.0.0
+# Optional ViT emotion engine dependencies are intentionally not installed by
+# default because this project runs the DeepFace path on CPU.
+# Install transformers + torch separately only if EDUPULSE_EMOTION_ENGINE=vit.
