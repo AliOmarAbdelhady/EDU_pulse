@@ -2,7 +2,7 @@ import prisma from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
-const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
+const PYTHON_BACKEND = process.env.PYTHON_SERVICE_URL || "http://localhost:8001";
 
 export async function GET(request, { params }) {
   const { id } = await params;
@@ -50,7 +50,7 @@ export async function GET(request, { params }) {
     });
   } catch (err) {
     return Response.json(
-      { error: "Python backend is not reachable. Make sure it is running on port 8000." },
+      { error: "Python backend is not reachable. Make sure it is running on port 8001." },
       { status: 503 }
     );
   }

@@ -3,7 +3,7 @@ import PDFDocument from "pdfkit";
 
 export const dynamic = "force-dynamic";
 
-const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
+const PYTHON_BACKEND = process.env.PYTHON_SERVICE_URL || "http://localhost:8001";
 const INTERNAL_KEY = process.env.INTERNAL_API_KEY || "edupulse-internal-key";
 
 // EDU Pulse brand colors
