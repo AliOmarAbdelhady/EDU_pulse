@@ -63,6 +63,9 @@ async function sha256Hex(value) {
 }
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  // Explicitly trust the request host so auth works on Vercel, previews,
+  // and any other host without relying on the AUTH_TRUST_HOST / VERCEL env vars.
+  trustHost: true,
   session: { strategy: "jwt" },
   pages: {
     signIn: "/login",
